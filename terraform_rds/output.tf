@@ -1,5 +1,5 @@
 output "subnet_data"{
-    value = data.aws_subnet_ids.available_db_subnet.ids
+    value = [aws_subnet.db_subnet_1.id, aws_subnet.db_subnet_2.id]
 }
 output "rds_address"{
     value = aws_db_instance.db_instance.address 

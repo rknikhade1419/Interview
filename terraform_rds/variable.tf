@@ -39,7 +39,7 @@ variable "public_access"{
 
 variable "skip_final_snapshot"{
     type = bool
-    default = false
+    default = true
 }
 
 variable "delete_automated_backups"{
